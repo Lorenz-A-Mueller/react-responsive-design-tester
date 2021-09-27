@@ -35,7 +35,6 @@ let simplifiedSharedParamsString = '';
 // *********************************
 
 export default function MainArea() {
-  console.log('process.NODE_ENV', process.env.NODE_ENV);
   const [numberOfSlots, setNumberOfSlots] = useState(
     sharedDevices.length ? sharedDevices.length + 2 : 3,
   ); // show 2 more slots in the begging than shared devices; show 3 if there weren't any shared
